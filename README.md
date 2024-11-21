@@ -1,6 +1,6 @@
 # Hardware and Networking Company Website  
 
-![Hardware and Networking Company](https://via.placeholder.com/1000x300?text=Hardware+and+Networking+Company+Website)  
+![Hardware and Networking Company](https://github.com/oladokedamilola/Company-Website/blob/core/static/images/home.jpg?raw=true)  
 
 A professional and responsive website for a hardware and networking company, designed to showcase services, publish blogs, and manage customer interactions effectively.  
 
