@@ -1,7 +1,3 @@
-Here’s your updated **README.md** with an image placeholder:
-
----
-
 # Hardware and Networking Company Website  
 
 ![Hardware and Networking Company](https://via.placeholder.com/1000x300?text=Hardware+and+Networking+Company+Website)  
@@ -65,7 +61,7 @@ The blog feature empowers admins to:
 ### **Setup Instructions**  
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/your-username/hardware-networking-website.git  
+   git clone https://github.com/oladokedamilola/Company-Website.git 
    cd hardware-networking-website  
    ```  
 
