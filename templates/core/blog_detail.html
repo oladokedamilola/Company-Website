@@ -1,0 +1,29 @@
+<!-- core/templates/core/blog_detail.html -->
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{ blog.title }}{% endblock %}
+
+
+{% block content %}
+<section id="blog-detail" class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Blog Post Content -->
+            <div class="col-md-8 offset-md-2">
+                <h1 class="mb-4">{{ blog.title }}</h1>
+                <p class="text-muted">By {{ blog.author }} | {{ blog.created_at|date:"F j, Y" }}</p>
+
+                {% if blog.image %}
+                <img src="{{ blog.image.url }}" alt="{{ blog.title }}" class="img-fluid mb-4">
+                {% endif %}
+
+                <p>{{ blog.content }}</p>
+                
+                <!-- Optionally, you can add a "back to blogs" link or similar -->
+                <a href="{% url 'blogs' %}" class="btn btn-secondary">Back to Blogs</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

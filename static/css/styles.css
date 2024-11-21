@@ -1,0 +1,452 @@
+/* General css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Overall Layout */
+body {
+    font-family: 'Roboto', sans-serif; /* Using Roboto for body text */
+    color: #333333;
+    background-color: #f1f1f1; /* Light Gray Background */
+}
+/* Navbar General Styling */
+header .navbar {
+    padding: 10px 0; /* Maintain vertical padding for aesthetics */
+    margin: 0; /* Remove extra margin */
+}
+
+/* Navbar Items */
+header .navbar-nav .nav-item {
+    margin: 0 10px; /* Horizontal spacing between nav items */
+}
+
+header .navbar-nav .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px; /* Padding for links */
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+header .navbar-nav .nav-link:hover {
+    background-color: #e55a00;
+    border-radius: 5px; /* Adds a rounded hover effect */
+}
+
+/* Navbar Logo */
+.navbar-logo {
+    height: 50px; /* Ensures the logo size fits */
+    width: auto;
+}
+
+/* Navbar Toggle Button */
+.navbar-toggler {
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+
+/* Main Hero Section */
+.hero {
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif; /* Using Poppins for Hero Title */
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif; /* Using Lato for Hero Subtitle */
+}
+
+/* Buttons */
+button, .btn {
+    background-color: #ff6a13; /* Orange */
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #e55a00; /* Darker Orange on Hover */
+}
+
+button:focus, .btn:focus {
+    outline: none;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ff6a13;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e55a00;
+    text-decoration: underline;
+}
+
+footer i {
+    transition: color 0.3s ease;
+}
+
+footer i:hover {
+    color: #ff6a13;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    background-color: #ffffff; /* White for sections */
+}
+
+section h2 {
+    font-family: 'Poppins', sans-serif; /* Using Poppins for Section Titles */
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Cards (for Services, Resources, etc.) */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif; /* Using Montserrat for Card Title */
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #666;
+    font-family: 'Lato', sans-serif; /* Using Lato for Card Text */
+}
+
+/* Forms */
+form {
+    margin-top: 30px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif; /* Using Roboto for Form Fields */
+}
+
+input[type="submit"] {
+    background-color: #0066cc;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #005bb5;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff6a13; /* Orange */
+}
+
+/* Miscellaneous */
+section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section li {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+}
+/* End of General css */
+
+
+
+/* Hero Section */
+#hero-section {
+    position: relative; /* Ensures overlay and text are positioned relative to this container */
+    background-image: url('/static/images/home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: local; /* Ensures it is fixed to the section but scrolls with the page */
+    color: #ffffff;
+    text-align: center;
+    height: 90vh; /* Adjust the height as needed */
+    overflow: hidden;
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Overlay for the Hero Section */
+#hero-section .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 1; /* Places the overlay below the text */
+}
+
+/* Hero Section Text Styling */
+#hero-section h1,
+#hero-section p,
+#hero-section .btn {
+    position: relative; /* Ensures text and button are above the overlay */
+    z-index: 2; /* Places text and button above the overlay */
+}
+
+/* Hero Section Heading */
+#hero-section h1 {
+    font-family: 'Poppins', sans-serif; /* Font for Hero Title */
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Hero Section Paragraph */
+#hero-section p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif; /* Font for Hero Subtitle */
+}
+
+/* Button Styling */
+#hero-section .btn {
+    background-color: #ff6a13; /* Orange */
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#hero-section .btn:hover {
+    background-color: #e55a00; /* Darker Orange on Hover */
+}
+
+#hero-section .btn:focus {
+    outline: none;
+}
+
+
+
+
+
+
+/* About Us Section */
+#about {
+    padding: 60px 15px;
+    background-color: #f9f9f9; /* Light gray background */
+}
+
+#about h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+#about .btn {
+    background-color: #ff6a13;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#about .btn:hover {
+    background-color: #e55a00;
+}
+
+#about img {
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 100%; /* Ensure responsiveness */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Services Section */
+#services {
+    padding: 60px 15px;
+    background-color: #f9f9f9;
+}
+
+#services h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.card .card-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+
+/* Contact Us Section */
+#contact h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#contact p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#contact ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#contact ul li strong {
+    color: #ff6a13; /* Accent color for important text */
+}
+
+#contact form {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact .btn-primary {
+    background-color: #ff6a13;
+    border: none;
+    font-weight: 600;
+}
+
+#contact .btn-primary:hover {
+    background-color: #e55a00;
+}
